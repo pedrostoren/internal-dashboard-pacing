@@ -87,6 +87,7 @@ current_year = today.year
 
 cost_time_series = adf[['date_day', 'spend']].groupby('date_day').sum().round(0)
 
+adf['date_day'] = pd.to_datetime(adf['date_day'])
 adf['year'] = adf['date_day'].dt.year
 adf['month'] = adf['date_day'].dt.month
 adf['days_in_month'] = adf['date_day'].dt.days_in_month
