@@ -15,7 +15,7 @@ requests
 numpy
 
 pydata-google-auth 
-
+google-cloud-firestore
 google-cloud-core 
 requests-oauthlib 
 
