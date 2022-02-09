@@ -40,7 +40,7 @@ def run_query(query):
     return rows
 
 rows = pd.read_gbq("SELECT * FROM `e-quanta-287411.dbt_pedro_atyp.streamlit_adapter`", credentials=credentials,)
-image = Image.open('/Users/pedro/streamlitdash/Atyp_RGB-POS.png')
+image = Image.open('/Atyp_RGB-POS.png')
 
 st.sidebar.image(image, use_column_width=True)
 st.sidebar.title('atyp\'s budget pacing tool')
